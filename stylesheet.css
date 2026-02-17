@@ -1,0 +1,58 @@
+css.css
+
+body {
+    font-family: "Manrope", arial;
+    max-width: 38em;
+    padding: 10px;
+    margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+
+.intro {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flexbox .item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    flex: 1 1 200px; /* Grow, shrink, and set a base width */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.flexbox2 {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flexbox2 img {
+    width: 100px; /* ALT HER ER AUTOFYLLET, what does it mean */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input, .form textarea {
+    padding: 10px;
+    border: 3px dotted #cd2cc8;
+    border-radius: 20px;
+    font-size: 1em;
+}
