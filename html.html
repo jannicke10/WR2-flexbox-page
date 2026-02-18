@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+
     <title>Jannicke sin flexbox</title>
 </head>
 <body>
 
-    <header>Velkommen</header>
-
-    <main>hallais
-        <section class="
-        intro">
-            <h1>Velkommen til min nettside!</h1>
+    <header>
+  <h1>Nils Bjarte</h1>
+  <nav class="main-nav">
+    <a href="#intro">Om Nils</a>
+    <a href="#flexbox">Fun facts</a>
+    <a href="#bilder">Bilder</a>
+    <a href="#kontakt">Skriv til han</a>
+    </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Til minne om hans kattesjel.</h2><br>
 <p>intro, details, fun facts, eller noko slikt</p>
-<p>Ditta er ein side til minne for Nils Bjarte.</p>
+<p>Ditta er ein side til minne for Nils Bjarte.</p><br>
+<img class ="nils1" src="https://i.postimg.cc/QtbpKryh/DSC_7775elitenweb.jpg" alt="Bilde av Nils Bjarte">
         </section>
 
         <section class="flexbox"> 
             <h2>Nils Bjarte. 2009 - 2025.</h2>
             <p>Halla. Vi skal ha én Flexbok i navigasjonsområdet eller "main section layout". oog.
             </p>
-            <p>Nils Bjarte var ein søt katt.</p>
+            <p>Nils Bjarte var ein søt katt.</p><br>
+            <br>
             <div class="flex-container">
                 <div class="flex-item">Flex Item 1</div>
                 <div class="flex-item">Flex Item 2</div>
@@ -30,7 +43,7 @@
             </div>  
         </section>
 
-        <section class="flexbox2">
+        <section class="bilder">
             <h2>Flexbox Centering</h2>
             <p>ett område hvor innhold er centered eller aligned ved å bruke flexbox.</p>
             <div class="centered-container">
@@ -38,21 +51,25 @@
             </div>
         </section>
 
-        <section class="form">
-        <p>Her kommer et skjema. Du kan skrive din melding, så kommer den frem til Nils Bjarte i Kattehimmelen.</p>
+        <section class="kontakt">
+        <h2>Skriv til Nils Bjarte</h2>
+            <p>Har du noe på hjertet? Du kan skrive din melding, så kommer den frem til Nils Bjarte i Kattehimmelen.</p>
             <div class="form-container">
                 <form>
                     <label for="name">Navn:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required><br>
+                    <br>
 
                     <label for="email">E-post:</label>
-                    <input type="email" id="email" name="email" required>
-
+                    <input type="email" id="email" name="email" required><br>
+                    <br>
                     <label for="message">Melding:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <br>
 
                     <button type="submit">Send</button>
                 </form>
+                </div>
 
         <p>
 Use proper labels for each field.

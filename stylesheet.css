@@ -1,5 +1,30 @@
 css.css
 
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Manrope", arial;
+    font-size: 40px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
 body {
     font-family: "Manrope", arial;
     max-width: 38em;
@@ -9,19 +34,35 @@ body {
   
 }
 
-
 .intro {
     font-size: 1.25em;
     margin-bottom: 20px;
+    background: red;
+}
+
+.nils1 {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    justify-content: center ;
 }
 
 .flexbox {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    background: pink;
 }
 
-.flexbox .item {
+.flex-container {
+    display: flex;
+    gap: 10px;
+    background: lightblue;
+}
+
+.flex-item {
     background-color: #f0f0f0;
     padding: 20px;
     flex: 1 1 200px; /* Grow, shrink, and set a base width */
@@ -29,30 +70,30 @@ body {
     text-align: center;
 }
 
-.flexbox2 {
+.bilder {
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.flexbox2 img {
+.bilder img {
     width: 100px; /* ALT HER ER AUTOFYLLET, what does it mean */
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-
-.form {
+    
+.kontakt    {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.form input, .form textarea {
+.kontakt input, .kontakt textarea {
     padding: 10px;
     border: 3px dotted #cd2cc8;
-    border-radius: 20px;
+    border-radius: 2px;
     font-size: 1em;
 }
