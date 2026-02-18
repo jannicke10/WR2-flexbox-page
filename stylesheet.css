@@ -1,14 +1,14 @@
 css.css
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Manrope", arial;
-    font-size: 40px;
-    background: #000000;
-    color: #ffffff;
-    border-radius: 20px;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: white;
+  background: #30244e;
+  border-radius: 20px;
+
 }
 
 .main-nav {
@@ -27,7 +27,7 @@ header {
 
 body {
     font-family: "Manrope", arial;
-    max-width: 38em;
+    max-width: 43em;
     padding: 10px;
     margin: 0 auto;
   box-sizing: border-box;
@@ -35,7 +35,6 @@ body {
 }
 
 .intro {
-    font-size: 1.25em;
     margin-bottom: 20px;
     background: red;
 }
@@ -70,21 +69,28 @@ body {
     text-align: center;
 }
 
-.bilder {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
+
+.gallery {
+    display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    background: lightgreen;
 }
 
-.bilder img {
-    width: 100px; /* ALT HER ER AUTOFYLLET, what does it mean */
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+.photo-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
-    
+.photo-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
 .kontakt    {
     display: flex;
     flex-direction: column;
