@@ -1,47 +1,59 @@
-css.css
+stylesheet.css
 
-header {
+body {
+    font-family: "Manrope", arial;
+    text-align: center;
+    background: rgb(147, 156, 255);
+    max-width: 43em;
+    padding: 10px;
+    margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.4em;
+  font-family: "Manrope", arial;
+  font-weight: bold;
   text-align: center;
   justify-content: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  color: white;
-  background: #30244e;
-  border-radius: 20px;
+}
 
+.page-container {
+  max-width: 43em;
+  font-family: "Manrope", arial;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f0f0f8;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .main-nav {
+ font-family: "Manrope", arial;
   display: flex;
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 12px;
+  padding-bottom: 30px;
 }
 
 .main-nav a {
   text-decoration: none;
-  color: #000;
   font-weight: 600;
-}
-
-body {
-    font-family: "Manrope", arial;
-    max-width: 43em;
-    padding: 10px;
-    margin: 0 auto;
-  box-sizing: border-box;
-  
 }
 
 .intro {
     margin-bottom: 20px;
-    background: red;
+    background: #1C0D23;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 .nils1 {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
@@ -50,20 +62,22 @@ body {
 
 .flexbox {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    background: pink;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 .flex-container {
     display: flex;
+    text-align: center;
     gap: 10px;
-    background: lightblue;
 }
 
 .flex-item {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #d9b4fa;
+    text-align: center;
+    border-radius: 35px;
+    padding: 15px;
     flex: 1 1 200px; /* Grow, shrink, and set a base width */
     box-sizing: border-box;
     text-align: center;
@@ -93,13 +107,32 @@ body {
 
 .kontakt    {
     display: flex;
+    padding: 20px;
     flex-direction: column;
     gap: 10px;
+    border-radius: 25px;
+    background: #1C0D23;
+    color: #FFFFFF;
 }
 
 .kontakt input, .kontakt textarea {
-    padding: 10px;
+    padding: 5px;
     border: 3px dotted #cd2cc8;
     border-radius: 2px;
     font-size: 1em;
+}
+
+.form-container {
+font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #1C0D23;
+  font-family: "Manrope", Arial;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-top: 20px;
+  padding: 1em;
+  border-radius: 25px;
 }
