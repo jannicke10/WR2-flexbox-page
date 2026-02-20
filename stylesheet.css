@@ -30,17 +30,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-nav {
  font-family: "Manrope", arial;
+ font-size: larger;
   display: flex;
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 12px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .main-nav a {
   text-decoration: none;
   font-weight: 600;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  color: #3a2e56;
 }
 
 .intro {
@@ -62,19 +69,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .flexbox {
     display: flex;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
 }
 
 .flex-container {
     display: flex;
-    text-align: center;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-item {
-    background-color: #d9b4fa;
+    background:#3a2e56;
+    color: #FFFFFF;
     text-align: center;
     border-radius: 35px;
     padding: 15px;
@@ -83,12 +95,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-
 .gallery {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    background: lightgreen;
+    background: #1C0D23;
+    border-radius: 25px;
 }
 
 .photo-grid {
@@ -115,15 +127,65 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
 }
 
-.kontakt input, .kontakt textarea {
-    padding: 5px;
-    border: 3px dotted #cd2cc8;
-    border-radius: 2px;
-    font-size: 1em;
+.contact-form {
+  display: grid;
+  gap: 16px;
 }
 
-.form-container {
-font-weight: bold;
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: large;
+}
+
+.kontakt input,
+.kontakt textarea {
+  padding: 8px 10px;
+  border: 4px dotted #9540ef;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.kontakt textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kontakt button {
+  align-self: flex-start;
+  display: inline-block;
+  font-size: large;
+  font-weight: bold;
+  width: auto;
+  padding: 8px 8px;
+  border: dotted #9540ef 4px;
+  border-radius: 12px;
+  background: #eeeeee;
+  color: #3a2e56;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.kontakt button:hover {
+  background: #cfbdce;
+}
+
+.kontakt button:active {
+  transform: translateY(1px);
 }
 
 footer {
