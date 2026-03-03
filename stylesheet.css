@@ -10,8 +10,16 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  background: #1C0D23;
+  color: #FFFFFF;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 0.4em;
+  margin: 0 0 0.2em;
   font-family: "Manrope", arial;
   font-weight: bold;
   text-align: center;
@@ -31,13 +39,16 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
  font-family: "Manrope", arial;
  font-size: larger;
+ background: #f0f0f8;
+color: #000000;
   display: flex;
-  gap: 16px;
+  gap: 26px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 12px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+  border: solid #000000 1px;
 }
 
 .main-nav a {
@@ -47,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-nav a:hover {
   text-decoration: underline;
-  color: #3a2e56;
+  color: #000000;
 }
 
 .intro {
@@ -64,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     display: block;
     margin: 0 auto;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .flexbox {
@@ -75,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     gap: 20px;
     text-align: center;
+    justify-content: center;
 }
 
 .flex-container {
@@ -109,13 +121,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 22px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 .photo-card {
-  width: min(320px, 92vw);
+  width: min(380px, 92vw);
   margin: 0;
-  padding: 10px;
+  padding: 15px;
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
   border: 1px solid rgba(173, 122, 255, 0.35);
@@ -137,8 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
   padding: 10px 12px;
   border-radius: 10px;
-  background: rgba(10, 4, 15, 0.35);
-  color: #efe6ff;
+  color: #ffffff;
   font-size: 0.94rem;
   line-height: 1.4;
   letter-spacing: 0.1px;
