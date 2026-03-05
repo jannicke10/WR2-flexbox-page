@@ -4,7 +4,6 @@ body {
     font-family: "Manrope", arial;
     text-align: center;
     background: rgb(147, 156, 255);
-    max-width: 43em;
     padding: 10px;
     margin: 0 auto;
   box-sizing: border-box;
@@ -59,6 +58,10 @@ color: #000000;
 .main-nav a:hover {
   text-decoration: underline;
   color: #000000;
+}
+
+.main-nav a:visited {
+  color: #3d3d3d;
 }
 
 .intro {
@@ -204,7 +207,7 @@ color: #000000;
 .kontakt input,
 .kontakt textarea {
   padding: 8px 10px;
-  border: 4px dotted #9540ef;
+  border: 2px dotted #9540ef;
   border-radius: 6px;
   font-size: 1em;
   font-family: inherit;
@@ -213,6 +216,18 @@ color: #000000;
 .kontakt textarea {
   min-height: 180px;
   resize: vertical;
+}
+
+.kontakt input:focus,
+.kontakt textarea:focus,
+.kontakt button:focus {
+  outline: 1px solid #9540ef;
+  outline-offset: 2px;
+}
+
+.kontakt input:focus,
+.kontakt textarea:focus {
+  border-color: #9540ef;
 }
 
 @media (max-width: 700px) {
